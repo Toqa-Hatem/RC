@@ -1,0 +1,136 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+  }
+  span {
+    color: black;
+  }
+
+  .sidebar {
+    position: sticky;
+    height: 99%;
+    width: 100%;
+    background: #ffffff;
+    transition: all 0.5s ease;
+    border: solid black;
+
+    box-shadow: 4px 4px 5px 6px gray;
+    border-radius: 10px;
+    margin-top: 10%;
+  }
+  .sidebar .logo {
+    color: #e6b106;
+
+    font-weight: 900;
+    display: block;
+    text-align: center;
+    font-size: 70px;
+  }
+  .sidebar .navs {
+    margin-top: 10px;
+  }
+  .sidebar .navs li {
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 1rem 0;
+
+    border-radius: 20px;
+  }
+  .sidebar .navs a {
+    text-decoration: none;
+    height: 100%;
+    padding: 1rem 0 1rem 2rem;
+    width: 100%;
+    transition: all 0.4s ease;
+    border-radius: 20px;
+  }
+  .sidebar .navs li a.active {
+    background: #e6b106;
+  }
+  .sidebar .navs li a:hover {
+    background: #e6b106;
+    padding-left: 4rem;
+    transition: all 1s ease;
+  }
+  .sidebar .navs li a .links_name {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .admin-view {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+  }
+  .content-right {
+    height: 100vh;
+    overflow: auto;
+    padding: 1rem;
+  }
+  @media screen and (max-width: 765px) {
+    .sidebar {
+      width: 150px;
+    }
+    .sidebar .navs li a .links_name {
+      color: rgb(0, 0, 0);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    .sidebar .logo {
+      color: #e6b106;
+      font-weight: 900;
+      display: block;
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<div class="sidebar">
+  <div class="logo">
+    <p>R<span>C</span></p>
+  </div>
+  <ul class="navs">
+    <li>
+      <a href="user.php" class="active">
+        <p class="links_name" onclick="location.href='user.php'">Users</p>
+      </a>
+    </li>
+    <li>
+      <a href="application.php">
+        <p class="links_name" onclick="location.href='application.php'">
+          Applications
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="reviews.php">
+        <p class="links_name" onclick="location.href='reviews.php'">Reviews</p>
+      </a>
+    </li>
+    <li>
+      <a href="complain.php">
+        <p class="links_name" onclick="location.href='complain.php'">
+          Complains
+        </p>
+      </a>
+    </li>
+    <li>
+      <a href="payment.php">
+        <p class="links_name" onclick="location.href='payment.php'">Payments</p>
+      </a>
+    </li>
+    <hr />
+    <li>
+      <a href="../login.php">
+        <p class="links_name">logout</p>
+      </a>
+    </li>
+  </ul>
+</div>

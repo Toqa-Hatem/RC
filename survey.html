@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/Access/Desktop/123/data.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>survey</title>
+    <link rel="stylesheet" href="data.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&amp;family=Roboto:wght@300&amp;display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Castoro+Titling&amp;family=Raleway:wght@100&amp;display=swap"
+      rel="stylesheet"
+    
+      head="" />
+  </head>
+  <?php
+include('surv.php');
+  ?>
+  <body>
+    <div class="div">
+      <p>
+        Fill this survey , To improve our services and get an Extra Points .
+      </p>
+    </div>
+    <form class="survey" name="survey" method="post" action="surv.php">
+      <p class="p1">
+        Let Us Know More <br />
+        About Your Opinion ......
+      </p>
+      <hr class="hr1" />
+
+      <div class="q1">
+        <p>How often do you buy something online ?</p>
+
+        <ul class="ul1">
+          <li>
+            <input type="radio" id="r1" name="a" value="once a month" />
+            <lable class="A" for="r1">once a month</lable>
+          </li>
+          <li>
+            <input type="radio" id="r2" name="a" value="weekly" />
+            <label class="B" for="r2">weekly </label>
+          </li>
+          <li>
+            <input type="radio" id="r3" name="a" value="rarely" />
+            <label class="C" for="r3">rarely</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="q1">
+        <p>
+          How satisfied were you with your customer service experience while
+          buying online ?
+        </p>
+
+        <ul class="ul2">
+          <li>
+            <input type="radio" id="r4" name="b" value="very dissatisfied" />
+            <lable for="r4">very <br />dissatisfied </lable>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="r5"
+              name="b"
+              value="somewhat dissatisfied" />
+            <lable for="r5"
+              >somewhat<br />
+              dissatisfied
+            </lable>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="r6"
+              name="b"
+              value="slightly dissatisfied" />
+            <lable for="r6"> slightly <br />dissatisfied</lable>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="r7"
+              name="b"
+              value="neither satisfied nor dissatisfied" />
+            <lable for="r7"
+              >neither satisfied<br />
+              nor dissatisfied
+            </lable>
+          </li>
+          <li>
+            <input type="radio" id="r8" name="b" value="somewhat satisfied" />
+            <lable for="r8"
+              >somewhat<br />
+              satisfied
+            </lable>
+          </li>
+          <li>
+            <input type="radio" id="r9" name="b" value="very satisfied" />
+            <lable for="r9"> very <br />satisfied </lable>
+          </li>
+        </ul>
+      </div>
+
+      <div class="q1">
+        <p>How likely you recommend this web application to others ?</p>
+
+        <ul class="ul3">
+          <li>
+            <input type="radio" id="r10" name="c" value="most likely" />
+            <label for="r10">most likely</label>
+          </li>
+          <li>
+            <input type="radio" id="r11" name="c" value=" maybe" />
+            <label for="r11"> maybe</label>
+          </li>
+          <li>
+            <input type="radio" id="r12" name="c" value="never" />
+            <label for="r12">never</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="q1">
+        <p>Did you find what you were looking for today?</p>
+        <br />
+        <ul class="ul4">
+          <li>
+            <input type="radio" id="r13" name="d" value="Yes" />
+            <label for="r13">Yes</label>
+          </li>
+          <li>
+            <input type="radio" id="r14" name="d" value="No" />
+            <label for="r14">No</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="q1">
+        <label
+          >Which mobile application/web application you frequently use for
+          online shopping ?</label
+        ><br />
+        <textarea
+          class="one"
+          name="e"
+          placeholder="type here.."
+          style="
+            text-align: center;
+            padding-top: 30px;
+            width: 400px;
+            height: 40px;
+            margin-top: 3%;
+            border-radius: 15px;
+          "></textarea>
+      </div>
+
+      <div class="q1">
+        <p>what vertical/industry best describes your company ?</p>
+
+        <ul class="ul5">
+          <li>
+            <input type="radio" id="r15" name="f" value="Ecommerce-Retail" />
+            <label for="r15">Ecommerce-<br />Retail</label>
+          </li>
+          <li>
+            <input type="radio" id="r16" name="f" value=" Ecommerce-Travel" />
+            <label for="r16">Ecommerce-<br />Travel </label>
+          </li>
+          <li>
+            <input type="radio" id="r17" name="f" value="Ecommerce-Other" />
+            <label for="r17">Ecommerce-<br />Other</label>
+          </li>
+          <li>
+            <input type="radio" id="r18" name="f" value="SaaS" />
+            <label for="r18">SaaS</label>
+          </li>
+          <li>
+            <input type="radio" id="r19" name="f" value="MarketPlace " />
+            <label for="r19">MarketPlace </label>
+          </li>
+          <li>
+            <input type="radio" id="r20" name="f" value="Agency/Consulting" />
+            <label for="r20">Agency/<br />Consulting</label>
+          </li>
+          <li>
+            <input type="radio" id="r21" name="f" value="Lead Generation " />
+            <label for="r21"
+              >Lead<br />
+              Generation
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="r22" name="f" value="Other" />
+            <label for="r22">Other</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="q1">
+        <p>what best describes your role ?</p>
+        <ul class="ul6">
+          <li>
+            <input type="radio" id="r23" name="g" value="e.g.Manager" />
+            <label for="r23">e.g.Manager</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="r24"
+              name="g"
+              value=" Specialist/Team Manager" />
+            <label for="r24">Specialist/Team Manager </label>
+          </li>
+          <li>
+            <input type="radio" id="r25" name="g" value="Associate" />
+            <label for="r25">Associate</label>
+          </li>
+          <li>
+            <input type="radio" id="r26" name="g" value="VP Director" />
+            <label for="r26">VP Director</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="r27"
+              name="g"
+              value="C-Level Executive (CEO,CMO,etc) " />
+            <label for="r27">C-Level Executive (CEO,CMO,etc) </label>
+          </li>
+          <li>
+            <input type="radio" id="r28" name="g" value="Other" />
+            <label for="r28">Other</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="q1">
+        <label>What important features are we missing ?</label><br />
+        <textarea
+          class=""
+          name="h"
+          placeholder="type here.."
+          style="
+            text-align: center;
+            padding-top: 30px;
+            width: 400px;
+            height: 40px;
+            margin-top: 3%;
+            border-radius: 15px;
+          "></textarea>
+      </div>
+
+      <div class="q1">
+        <p>what other information would you like to see in our comparison ?</p>
+        <br />
+        <textarea
+          class=""
+          name="i"
+          placeholder="type here.."
+          style="
+            text-align: center;
+            padding-top: 30px;
+            width: 400px;
+            height: 40px;
+            margin-top: 0%;
+            border-radius: 15px;
+          "></textarea>
+      </div>
+
+      <div class="q1">
+        <p>what is your biggest fear or concern about purchasing an item ?</p>
+        <br />
+        <textarea
+          class=""
+          name="j"
+          placeholder="type here.."
+          style="
+            text-align: center;
+            padding-top: 30px;
+            width: 400px;
+            height: 40px;
+            margin-top: 0%;
+            border-radius: 15px;
+          "></textarea>
+      </div>
+
+      <div class="q1">
+        <p>were you able to find the information you were looking for ?</p>
+        <ul class="">
+          <li>
+            <input type="radio" id="r29" name="k" value="Yes" />
+            <label for="r29">Yes</label>
+          </li>
+          <li>
+            <input type="radio" id="r30" name="k" value="No" />
+            <label for="r30">No</label>
+          </li>
+        </ul>
+      </div>
+
+      <button
+        class="btn_end"
+        type="submit"
+        name="end"
+        >
+        DONE
+      </button>
+
+      <p class="end">Thank You For Your Time .</p>
+    </form>
+  </body>
+</html>
